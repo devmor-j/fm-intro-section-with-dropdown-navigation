@@ -23,55 +23,63 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-white">
-    <div class="container-fluid">
-
+  <nav class="navbar navbar-light bg-white navbar-expand-md">
+    <div class="container-fluid px-md-3 px-lg-4">
       <a class="navbar-brand fw-bolder fs-1 pe-md-4 pe-lg-5" href="#">snap</a>
 
-      <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
+      <div class="offcanvas offcanvas-end" style="width: min(50%, 18rem);" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav w-100 gap-md-2 gap-lg-3 gap-xl-4">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Features
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Todo List</a></li>
-              <li><a class="dropdown-item" href="#">Calendar</a></li>
-              <li><a class="dropdown-item" href="#">Reminders</a></li>
-              <li><a class="dropdown-item" href="#">Planning</a></li>
-            </ul>
-          </li>
+        <div class="offcanvas-header justify-content-end">
+          <button type="button" class="btn-close btn-lg" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Company
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">History</a></li>
-              <li><a class="dropdown-item" href="#">Our Team</a></li>
-              <li><a class="dropdown-item" href="#">Blog</a></li>
-            </ul>
-          </li>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav w-100 gap-md-2 gap-lg-3 gap-xl-4">
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Todo List</a></li>
+                <li><a class="dropdown-item" href="#">Calendar</a></li>
+                <li><a class="dropdown-item" href="#">Reminders</a></li>
+                <li><a class="dropdown-item" href="#">Planning</a></li>
+              </ul>
+            </li>
 
-          <li class="nav-item ms-md-auto">
-            <button class="btn">Login</button>
-          </li>
-          <li class="nav-item">
-            <button class="btn btn-outline-dark rounded-3">Register</button>
-          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">History</a></li>
+                <li><a class="dropdown-item" href="#">Our Team</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+              </ul>
+            </li>
 
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item ms-md-auto">
+              <button class="btn">Login</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-dark rounded-3">Register</button>
+            </li>
+
+          </ul>
+        </div>
+
       </div>
     </div>
   </nav>
