@@ -76,3 +76,34 @@ img {
     box-shadow: none !important;
   }
 }
+
+// dropdown icons
+.dropdown-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.dropdown-icon-todo::before {
+  content: url("./images/icon-todo.svg");
+  display: inline-flex;
+  width: 1.75rem;
+}
+
+.dropdown-icon-calendar::before {
+  content: url("./images/icon-calendar.svg");
+  display: inline-flex;
+  width: 1.75rem;
+}
+
+.dropdown-icon-reminders::before {
+  content: url("./images/icon-reminders.svg");
+  display: inline-flex;
+  width: 1.75rem;
+}
+
+.dropdown-icon-planning::before {
+  content: url("./images/icon-planning.svg");
+  display: inline-flex;
+  width: 1.75rem;
+}
