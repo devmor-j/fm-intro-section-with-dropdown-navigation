@@ -63,31 +63,26 @@ One hack that I have to do was changing default arror icons on dropdown menu. as
 ```html
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Features
+    Features <!-- dropdown header -->
   </a>
-  <ul class="dropdown-menu border-white border-0 shadow-lg" aria-labelledby="navbarDropdownMenuLink">
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
     <li>
-      <a class="dropdown-item text-black-50 dropdown-icon dropdown-icon-todo" href="#">Todo List</a>
+      <a class="dropdown-item" href="#">Todo List</a>
     </li>
+    ...
+    <!-- list continues -->
+    ...
     <li>
-      <a class="dropdown-item text-black-50 dropdown-icon dropdown-icon-calendar" href="#">Calendar</a>
-    </li>
-    <li>
-      <a class="dropdown-item text-black-50 dropdown-icon dropdown-icon-reminders" href="#">Reminders</a>
-    </li>
-    <li>
-      <a class="dropdown-item text-black-50 dropdown-icon dropdown-icon-planning" href="#">Planning</a>
+      <a class="dropdown-item" href="#">Planning</a>
     </li>
   </ul>
 </li>
 ```
 
-This will make a dropdown menu with 4 items that each should have an icon before it's text (look at the project mobile screenshot => Features menu).
-
-To achieve that layout we overide some classes to reset default icons and then bring in our owns:
+In order to use your own arrow shape for dropdown menus, we have to override some bootstrap classes that will reset bootstrap default icons. after that make sure layout still looks good and then bring in your own:
 
 ```scss
-// first you have to hide default arrows
+// first you have to hide default arrows by overriding this calss
 .dropdown-toggle::after {
   color: transparent;
   display: none;
@@ -107,6 +102,8 @@ To achieve that layout we overide some classes to reset default icons and then b
 .dropdown-toggle::before {
   margin-top: -0.125rem;
   content: url("/images/icon-arrow-down.svg");
+  // please note that 'background-image' won't work here
+  // instead use 'content' property
 }
 
 // everytime user clicks on dropdown menu,
