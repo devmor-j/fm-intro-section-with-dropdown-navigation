@@ -48,6 +48,29 @@ img {
   object-fit: scale-down;
 }
 
+// hack and customize dropdown arrow image
+.dropdown-toggle::after {
+  color: transparent;
+  display: none;
+}
+
+.dropdown-toggle {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  // align-items: center;
+  gap: 0.75rem;
+}
+
+.dropdown-toggle::before {
+  margin-top: -0.125rem;
+  content: url("/images/icon-arrow-down.svg");
+}
+
+.dropdown-toggle:focus::before {
+  content: url("/images/icon-arrow-up.svg");
+}
+
 @media (max-width: 767.98px) {
   .dropdown-menu {
     box-shadow: none !important;
