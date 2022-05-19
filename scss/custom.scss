@@ -36,6 +36,16 @@
 
 body {
   font-family: "Epilogue", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.btn.btn-dark:hover {
+  background: transparent;
+  color: #212529;
+}
+
+img {
+  object-fit: scale-down;
 }
 
 @media (max-width: 767.98px) {
