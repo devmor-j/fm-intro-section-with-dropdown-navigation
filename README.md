@@ -11,7 +11,6 @@ This is my solution to the [Intro section with dropdown navigation challenge on 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -50,15 +49,13 @@ Mobile 375px iPhone 5/SE
 - [Vite.js](https://vitejs.dev/) - Next Generation Frontend Tooling
 - [Minified html](https://github.com/vbenjs/vite-plugin-html) and [compressed png](https://github.com/vbenjs/vite-plugin-imagemin) pipeline
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
-Using Bootstrap is hard! I would probably swtich back to my Tailwind setup for css styling.
+Using Bootstrap might be hard specially when you want more flexibility and customization! I would probably switch back to my Tailwind setup for css styling.
 
 Even changing color is a pain :| not to mention responsive classes and hover states :)
 
-One hack that I have to do was changing default arror icons on dropdown menu. assume you have something like this:
+One hack that I have to do was changing default arrow icons on dropdown menu. assume you have something like this:
 
 ```html
 <li class="nav-item dropdown">
@@ -113,11 +110,7 @@ In order to use your own arrow shape for dropdown menus, we have to override som
 }
 ```
 
-Well I don't have to hack anything in [Tailwind](tailwindcss.com/) and classes are atomic and well-named. Also these bootstrap hacks make project very hard to maintain. Still there might be better solutions but I don't think their gonna be much better than this!
-
-### Useful resources
-
-Make sure to checkout [TailwindCSS](tailwindcss.com/) and give it a try!
+As long as I know there are no hacks in [Tailwind](tailwindcss.com/) classes are atomic and well-named. Also these bootstrap hacks make project somehow hard to maintain. Still there might be some better solutions which I'm not aware so don't be discouraged to find better approaches when using Boostrap.
 
 ## Author
 
