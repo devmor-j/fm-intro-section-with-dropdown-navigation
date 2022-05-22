@@ -11,10 +11,9 @@
 
   <link rel="stylesheet" href="./scss/custom.scss">
 
-  
   <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js" type="module"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" type="module"></script>
-  
+
   <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
 
   <!-- google fonts -->
@@ -34,7 +33,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="offcanvas offcanvas-end" style="width: min(50%, 16rem);" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end" style="width: 50%; max-width: 16rem;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
         <div class="offcanvas-header justify-content-end">
           <button type="button" class="btn-close btn-lg" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -44,10 +43,10 @@
           <ul class="navbar-nav w-100 gap-md-2 gap-lg-3 gap-xl-4">
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Features
               </a>
-              <ul class="dropdown-menu border-white border-0 shadow-lg" aria-labelledby="navbarDropdownMenuLink">
+              <ul class="dropdown-menu border-white border-0 shadow-lg" aria-labelledby="navbarDropdownMenuLink1">
                 <li>
                   <a class="dropdown-item text-black-50 dropdown-icon dropdown-icon-todo" href="#">Todo List</a>
                 </li>
@@ -64,10 +63,10 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Company
               </a>
-              <ul class="dropdown-menu border-white border-0 shadow-lg" aria-labelledby="navbarDropdownMenuLink">
+              <ul class="dropdown-menu border-white border-0 shadow-lg" aria-labelledby="navbarDropdownMenuLink2">
                 <li><a class="dropdown-item text-black-50" href="#">History</a></li>
                 <li><a class="dropdown-item text-black-50" href="#">Our Team</a></li>
                 <li><a class="dropdown-item text-black-50" href="#">Blog</a></li>
@@ -97,7 +96,7 @@
 
   <!-- --------------------------------------------------- -->
 
-  <div class="d-flex flex-column flex-md-row-reverse m-auto gap-5 py-4" style="width: min(100%, 64rem);">
+  <main class="d-flex flex-column flex-md-row-reverse m-auto gap-5 py-4" style="width: 100%; max-width: 64rem;">
     <picture>
       <source media="(max-width: 767.98px)" srcset="./images/image-hero-mobile.png">
       <img class="img-fluid" src="./images/image-hero-desktop.png" alt="">
@@ -110,13 +109,13 @@
       </p>
       <button class="btn btn-dark border-2 px-3 py-2 my-3" style="border-radius: 0.75rem;">Learn more</button>
       <div class="d-flex justify-content-between gap-md-4 pt-5">
-        <img style="width: min(100%, 5rem);" src="./images/client-databiz.svg" alt="">
-        <img style="width: min(100%, 5rem);" src="./images/client-audiophile.svg" alt="">
-        <img style="width: min(100%, 5rem);" src="./images/client-meet.svg" alt="">
-        <img style="width: min(100%, 5rem);" src="./images/client-maker.svg" alt="">
+        <img class="icon-width" src="./images/client-databiz.svg" alt="">
+        <img class="icon-width" src="./images/client-audiophile.svg" alt="">
+        <img class="icon-width" src="./images/client-meet.svg" alt="">
+        <img class="icon-width" src="./images/client-maker.svg" alt="">
       </div>
     </div>
-  </div>
+  </main>
 
 </body>
 
